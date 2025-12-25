@@ -1,3 +1,4 @@
+
 CREATE TABLE public.failed_events (
 	id serial NOT NULL,
 	topic varchar NOT NULL,
@@ -10,7 +11,7 @@ CREATE TABLE public.failed_events (
 	stacktrace varchar NOT NULL,
 	conumer_group varchar NOT NULL,
 	retry_count integer NOT NULL,
-	created_at date NOT NULL,
+	created_at timestamp NOT NULL,
 	status varchar NOT NULL,
 	CONSTRAINT failed_events_pk PRIMARY KEY (id)
 );
